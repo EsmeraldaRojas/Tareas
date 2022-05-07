@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERTAR DATOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilo-alumno.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <center>INSERTAR DATOS DE ALUMNO</center>
+        </h1>
+
+        
+            <form id="miformulario" onsubmit="verificarPasswords();" class="fromulario">
+
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label" id="label-text-1">MATRICULA
+                        <sup class="sup">*</sup>
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control-1" id="inputPassword" placeholder="Ingrese matricula">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label" id="label-text-2">NOMBRE
+                        <sup class="sup">*</sup>
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control-1" id="inputPassword" placeholder="Ingrese nombre">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label" id="label-text-3">PRIMER APELLIDO
+                        <sup class="sup-prap">*</sup>
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control-1" id="inputPassword" placeholder="Ingrese primer apellido">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label" id="label-text-4">SEGUNDO APELLIDO
+                        <sup class="sup-seap">*</sup>
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control-1" id="inputPassword" placeholder="Ingrese segundo apellido">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label" id="label-text-5">EMAIL
+                        <sup class="sup">*</sup>
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control-1" id="inputPassword" placeholder="Ingrese email">
+                    </div>
+                </div>
+                    <button type="submit" id="almacenar" class="btn btn-success" >ALMACENAR</button>
+            </form>
+        
+
+    </div>
+</body>
+
+</html>
