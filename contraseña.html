@@ -28,16 +28,15 @@ if (paswd2!=="" && paswd1!=="")
 if (paswd2.lenght == paswd1.lenght && paswd2==paswd1) 
     {
 
-document.getElementById("ok").style = "visibility:visible;";
 document.getElementById("body").className = "bg-success";
-document.getElementById("what").style = "visibility:hidden;";
-
-document.getElementById("error").style = "visibility:hidden;";
+document.getElementById("note").style = "visibility:visible;";
+document.getElementById("notep").innerHTML="las contraseñas conciiden (procesando formulario)."
+document.getElementById("note").className = "alert alert-success";
 
 setTimeout(succes, 5000);
     function succes(){
 
-document.getElementById("succes").innerHTML="formulario procesado."
+document.getElementById("notep").innerHTML="formulario procesado."
     }
 
 
@@ -45,10 +44,9 @@ document.getElementById("succes").innerHTML="formulario procesado."
 }
 
 else{
-document.getElementById("error").style = "visibility:visible;";
-
-document.getElementById("ok").style = "visibility:hidden;";
-document.getElementById("what").style = "visibility:hidden;";
+document.getElementById("note").style = "visibility:visible;";
+document.getElementById("notep").innerHTML="Las Contraseñas no coinciden, vuelve a intentar !"
+document.getElementById("note").className = "alert alert-danger";
 
 
 document.getElementById("pass2").value="";
@@ -61,10 +59,11 @@ document.getElementById("body").className = "bg-danger";
 //si alguno de los dos inputs esta vacio
 if (paswd1=="" || paswd2=="") 
     {
-document.getElementById("what").style = "visibility:visible;";
-document.getElementById("ok").style = "visibility:hidden;";
-document.getElementById("error").style = "visibility:hidden;";
+document.getElementById("note").style = "visibility:visible;";
 document.getElementById("body").className = "bg-warning";
+document.getElementById("note").className = "alert alert-warning";
+document.getElementById("notep").innerHTML="rellena ambos campos."
+    
     }
 }
 
@@ -77,17 +76,13 @@ document.getElementById("body").className = "bg-warning";
             <center>CAMBIAR CONTRASEÑAS</center>
         </h1>
 
-        <div id="msg"></div>
+        
 
         <!-- Mensajes de Verificación -->
-        <div id="error" class="alert alert-danger " style="visibility: hidden;" >
-            Las Contraseñas no coinciden, vuelve a intentar !
-        </div>
-        <div id="ok" class="alert alert-success " style="visibility: hidden;" >
-           <p id="succes"> Las Contraseñas coinciden ! (Procesando formulario ... )</p>
-        </div>
-        <div id="what" class="alert alert-warning " style="visibility: hidden;">
-            rellena ambos campos
+        
+
+        <div id="note" class="alert alert-success " style="visibility: hidden;" >
+           <p id="notep"> Las Contraseñas coinciden ! (Procesando formulario ... )</p>
         </div>
         <!-- Fin Mensajes de Verificación -->
         <center>
