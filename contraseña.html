@@ -33,6 +33,15 @@ document.getElementById("body").className = "bg-success";
 document.getElementById("what").style = "visibility:hidden;";
 
 document.getElementById("error").style = "visibility:hidden;";
+
+setTimeout(succes, 5000);
+    function succes(){
+
+document.getElementById("succes").innerHTML="formulario procesado."
+    }
+
+
+
 }
 
 else{
@@ -41,9 +50,9 @@ document.getElementById("error").style = "visibility:visible;";
 document.getElementById("ok").style = "visibility:hidden;";
 document.getElementById("what").style = "visibility:hidden;";
 
+
 document.getElementById("pass2").value="";
 document.getElementById("pass1").value="";
-
 document.getElementById("body").className = "bg-danger";
         }
 
@@ -75,7 +84,7 @@ document.getElementById("body").className = "bg-warning";
             Las Contraseñas no coinciden, vuelve a intentar !
         </div>
         <div id="ok" class="alert alert-success " style="visibility: hidden;" >
-            Las Contraseñas coinciden ! (Procesando formulario ... )
+           <p id="succes"> Las Contraseñas coinciden ! (Procesando formulario ... )</p>
         </div>
         <div id="what" class="alert alert-warning " style="visibility: hidden;">
             rellena ambos campos
