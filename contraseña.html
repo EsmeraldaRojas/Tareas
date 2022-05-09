@@ -23,24 +23,44 @@ var paswd1=document.getElementById("pass1").value;
 var paswd2=document.getElementById("pass2").value;
 
 //comparamos
-if (paswd2.lenght == paswd1.lenght && paswd2==paswd1) {
+if (paswd2!=="" && paswd1!=="") 
+{
+if (paswd2.lenght == paswd1.lenght && paswd2==paswd1) 
+    {
 
 document.getElementById("ok").style = "visibility:visible;";
+document.getElementById("body").className = "bg-success";
+document.getElementById("what").style = "visibility:hidden;";
 
 document.getElementById("error").style = "visibility:hidden;";
 }
+
 else{
 document.getElementById("error").style = "visibility:visible;";
 
 document.getElementById("ok").style = "visibility:hidden;";
-}
+document.getElementById("what").style = "visibility:hidden;";
 
+
+document.getElementById("body").className = "bg-danger";
+        }
+
+    }
+
+//si alguno de los dos inputs esta vacio
+if (paswd1=="" || paswd2=="") 
+    {
+document.getElementById("what").style = "visibility:visible;";
+document.getElementById("ok").style = "visibility:hidden;";
+document.getElementById("error").style = "visibility:hidden;";
+document.getElementById("body").className = "bg-warning";
+    }
 }
 
 </script>
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <h1>
             <center>CAMBIAR CONTRASEÑAS</center>
@@ -49,11 +69,14 @@ document.getElementById("ok").style = "visibility:hidden;";
         <div id="msg"></div>
 
         <!-- Mensajes de Verificación -->
-        <div id="error" class="alert alert-danger " style="visibility: hidden;" role="alert">
+        <div id="error" class="alert alert-danger " style="visibility: hidden;" >
             Las Contraseñas no coinciden, vuelve a intentar !
         </div>
-        <div id="ok" class="alert alert-success ocultar" style="visibility: hidden; "role="alert">
+        <div id="ok" class="alert alert-success " style="visibility: hidden;" >
             Las Contraseñas coinciden ! (Procesando formulario ... )
+        </div>
+        <div id="what" class="alert alert-warning " style="visibility: hidden;">
+            rellena ambos campos
         </div>
         <!-- Fin Mensajes de Verificación -->
         <center>
