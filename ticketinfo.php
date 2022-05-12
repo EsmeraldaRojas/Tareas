@@ -43,21 +43,21 @@ $idbus=$fila['1'];
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="/bootstrap/4.3.1/css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.css" >
 
 
 <!-- jQuery library -->
-<link rel="stylesheet" href="/bootstrap/js/jquery.js">
+<link rel="stylesheet" href="/js/jquery.js">
 
 
-<link rel="stylesheet" href="/bootstrap/js/jquery-1.8.3.min.js">
+<link rel="stylesheet" href="/js/jquery-1.8.3.min.js">
 
 
 <!-- Popper JS -->
 <script src="/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="/bootstrap/4.3.1/js/bootstrap.js"></script>
+<script src="/js/bootstrap.js"></script>
 
 
 
