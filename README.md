@@ -1,5 +1,10 @@
 # Tareas
 
-este es un repositorio de Solo actividades escolares.
+esto es un archivo readme  aqui se describe el repositorio 
 
-este cambio deberia ser tuyo.
+en este repo se usa :
+
+* php
+
+*html 
+* css
