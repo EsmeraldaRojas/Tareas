@@ -2,9 +2,9 @@
 
 <h1>Bienvenid@  a mi repositorio!   </h1>
 
-esto es un archivo readme  aqui se describe el repositorio 
+<p>esto es un archivo readme  aqui se describe el repositorio<p> 
 
-en este repo se usa :
+<ol>en este repo se usa :
 
 * php
 * html 
@@ -12,6 +12,7 @@ en este repo se usa :
 * boostrap
 * mysql 
 
+</ol>
 
 
 
